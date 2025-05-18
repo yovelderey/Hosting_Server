@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הזמנה לאירוע</title>
+    <link rel="stylesheet" href="styles.css?v=7.0">
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img id="eventImage" src="" alt="תמונת הזמנה" class="event-image">
+
+        <h1 id="eventName" class="event-title">טוען אירוע...</h1>
+        <p id="eventDate" >📅 תאריך: טוען...</p>
+
+        <div class="buttons-container">
+          <button id="yesBtn" class="btn btn-default">נגיע</button>
+          <button id="maybeBtn" class="btn btn-default">אולי</button>
+          <button id="noBtn" class="btn btn-default btn-selected">לא נגיע</button>
+      </div>
+      
+      
+
+        <!-- ✅ שדה הכנסת מספר מוזמנים - מוסתר כברירת מחדל -->
+        <!-- ✅ שדה הכנסת מספר מוזמנים - מוסתר כברירת מחדל -->
+        <div id="guestsContainer" class="hidden">
+          <input type="number" id="numGuests" placeholder="כמה מוזמנים מגיעים?" class="guests-input">
+        </div>
+
+
+        <button id="submitBtn" class="btn btn-submit hidden">שלח</button>
+
+
+        <div class="event-details">
+          <p><span class="label">כתובת</span>  <span id="Address" class="value">טוען...</span></p>
+          <p><span class="label">אולם</span>  <span id="eventLocation" class="value">טוען...</span></p>
+          <p><span class="label">קבלת פנים</span>  <span id="eventTime" class="value">טוען...</span></p>
+          <p><span class="label">טלפון</span>  <span id="eventPhone" class="value">טוען...</span></p>
+      </div>
+      
+      <div class="event-buttons">
+        <button id="navigateBtn" class="btn">
+            <img src="images/waze.png" alt="נווט" class="icon">
+            <span>נווט לאירוע</span>
+        </button>
+        <button id="addToCalendarBtn" class="btn">
+            <img src="images/calendar.png" alt="יומן" class="icon">
+            <span>הוסף ליומן</span>
+        </button>
+    </div>
+
+    <p class="footer-text2">EasyVent - מערכת לאישורי הגעה וסידורי הושבה</p>
+    <p class="footer-text">פותח על ידי יובל טכנולוגיות, כל הזכויות שמורות ©</p>
+
+    
+    </div>
+</body>
+</html>
